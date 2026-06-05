@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏛 History Revise</title>
+
+    <link rel="icon" type="image/gif" href="https://media.tenor.com/IsLNzcCqZyQAAAAM/plave-bamby.gif">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            padding: 30px;
+            background: linear-gradient(-45deg, #667eea, #764ba2, #6a11cb, #2575fc);
+            background-size: 400% 400%;
+            animation: bgMove 15s ease infinite;
+            color: white;
+        }
+
+        @keyframes bgMove {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(255, 255, 255, .3);
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, .2);
+            border-radius: 25px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, .2);
+            transition: .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .subject {
+            background: rgba(255, 255, 255, .08);
+            border-radius: 20px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+
+        .subject h3 {
+            margin-bottom: 15px;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .btn {
+            text-decoration: none;
+        }
+
+        .btn button {
+            border: none;
+            padding: 14px 25px;
+            border-radius: 50px;
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: .4s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, .25);
+            transition: .5s;
+        }
+
+        .btn button:hover::before {
+            left: 100%;
+        }
+
+        .btn button:hover {
+            transform: translateY(-5px) scale(1.05);
+        }
+
+        .primary {
+            background: linear-gradient(45deg, #ff6b6b, #ff9966);
+        }
+
+        .secondary {
+            background: linear-gradient(45deg, #00c6ff, #0072ff);
+        }
+
+        .success {
+            background: linear-gradient(45deg, #00b09b, #96c93d);
+        }
+
+        .special {
+            background: linear-gradient(45deg, #f7971e, #ffd200);
+            color: #222;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 1rem;
+            opacity: .9;
+        }
+
+        @media(max-width:768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .btn-group {
+                flex-direction: column;
+            }
+
+            .btn button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>🏛 History Revise</h1>
+            <p>Your Ultimate O/L Revision Hub</p>
+        </div>
+
+
+
+
+        <div class="card">
+            <h2 class="section-title">Map Marking</h2>
+            <p style="text-align:center;margin-bottom:20px;">All Credits To @DReam A Level</p>
+
+            <div class="subject">
+                <h3>Sri Lankan Map!</h3>
+
+                <div class="btn-group">
+                <a class="btn" href="https://youtu.be/zlKZ9MSOlW0?list=PL2EXFTSbPMGUN6BmWJ4Pek48hqT2C0ltd" target="_blank">
+                    <button class="primary">Map Marking Video</button>
+                </a>
+                <a class="btn" href="https://drive.google.com/file/d/1gwclb54AcRKKdHecmhvHLCQbZ9FjqM58/view" target="_blank">
+                        <button class="success">Map Marking Practice PDF</button>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="subject">
+                <h3>World Map!</h3>
+
+                <div class="btn-group">
+                <a class="btn" href="https://youtu.be/Gpz4mShnvcw" target="_blank">
+                    <button class="primary">Map Marking Video</button>
+                </a>
+                <a class="btn" href="https://pastpapers.wiki/wp-content/uploads/2022/03/Empty-Asia-Europe-Map-for-Practice-Ol-History-Map-Marking-in-GCE-OL-Examination-768x576.jpg" target="_blank">
+                        <button class="success">Map Marking Practice PDF</button>
+                    </a>
+
+                </div>
+            </div>
+
+            
+
+        </div>
+
+        <div style="text-align:left;margin-bottom:35px;">
+        <a href="./index.html" target="_self" class="btn">
+            <button class="special">Go Back!</button>
+        </a>
+    </div>
+
+        <footer>
+            Made with ❤️ by Tiru | Modern Edition
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gadya Lit! by @Tiru</title>
+
+<link rel="icon" type="image/gif" href="https://media.tenor.com/IsLNzcCqZyQAAAAM/plave-bamby.gif">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background: linear-gradient(
+        135deg,
+        #667eea 0%,
+        #764ba2 25%,
+        #6a11cb 50%,
+        #2575fc 100%
+    );
+    background-size:400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color:white;
+    padding:30px;
+}
+
+@keyframes gradientBG{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.main-title{
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:20px;
+    text-shadow:0 0 20px rgba(255,255,255,.3);
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:40px;
+    opacity:.9;
+}
+
+.section{
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:25px;
+    padding:25px;
+    margin-bottom:30px;
+    box-shadow:0 8px 32px rgba(0,0,0,0.25);
+    transition:0.3s;
+}
+
+.section:hover{
+    transform:translateY(-5px);
+}
+
+.section-title{
+    font-size:2rem;
+    text-align:center;
+    margin-bottom:20px;
+    color:#fff;
+}
+
+.lesson{
+    background:rgba(255,255,255,0.08);
+    padding:20px;
+    border-radius:18px;
+    margin:20px 0;
+}
+
+.lesson h3{
+    margin-bottom:15px;
+}
+
+.button-group{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.btn{
+    text-decoration:none;
+}
+
+.btn button{
+    border:none;
+    padding:14px 24px;
+    border-radius:50px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    color:white;
+    transition:all .35s ease;
+    position:relative;
+    overflow:hidden;
+}
+
+.btn button::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,0.25);
+    transition:0.5s;
+}
+
+.btn button:hover::before{
+    left:100%;
+}
+
+.btn button:hover{
+    transform:translateY(-4px) scale(1.05);
+}
+
+.primary{
+    background:linear-gradient(45deg,#ff6b6b,#ff8e53);
+    box-shadow:0 5px 20px rgba(255,107,107,.4);
+}
+
+.secondary{
+    background:linear-gradient(45deg,#00c9ff,#92fe9d);
+    box-shadow:0 5px 20px rgba(0,201,255,.4);
+}
+
+.ai{
+    background:linear-gradient(45deg,#8e2de2,#4a00e0);
+    box-shadow:0 5px 20px rgba(142,45,226,.4);
+}
+
+.special{
+    background:linear-gradient(45deg,#f7971e,#ffd200);
+    color:#222;
+}
+
+footer{
+    text-align:center;
+    margin-top:40px;
+    opacity:0.8;
+}
+
+@media(max-width:768px){
+
+    .main-title{
+        font-size:2rem;
+    }
+
+    .button-group{
+        flex-direction:column;
+    }
+
+    .btn button{
+        width:100%;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1 class="main-title">📚 Gadya Lit! by @Tiru</h1>
+    <p class="subtitle">Sri Lankan Literature Learning Hub</p>
+
+
+    <!-- Purathana Gadhya -->
+
+    <div class="section">
+        <h2 class="section-title">🏛️ Purathana Gadhya</h2>
+
+        <div class="lesson">
+            <h3>📖 Padama 1</h3>
+
+            <div class="button-group">
+
+                <a href="https://youtu.be/uihI2cvsxp8" target="_blank" class="btn">
+                    <button class="primary">Lesson Part 1</button>
+                </a>
+
+                <a href="https://youtu.be/swZj5UGmpMo" target="_blank" class="btn">
+                    <button class="primary">Lesson Part 2</button>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=6v2itoUPfFM&t=1s" target="_blank" class="btn">
+                    <button class="ai">🤖 AI Video</button>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="lesson">
+            <h3>📖 Padama 8</h3>
+
+            <div class="button-group">
+
+                <a href="https://youtu.be/gVQLs3OHfyQ" target="_blank" class="btn">
+                    <button class="primary">Lesson Video</button>
+                </a>
+
+                <a href="https://youtu.be/HkiSvlOeQ48" target="_blank" class="btn">
+                    <button class="ai">🤖 AI Video 1</button>
+                </a>
+
+                <a href="https://youtu.be/IyXsCAcxLSs" target="_blank" class="btn">
+                    <button class="ai">🤖 AI Video 2</button>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="lesson">
+            <h3>📖 Padama 9</h3>
+
+            <div class="button-group">
+
+                <a href="https://youtu.be/Iz_gIB7IoCk" target="_blank" class="btn">
+                    <button class="primary">Lesson Video</button>
+                </a>
+
+                <a href="https://youtu.be/nLd-JyE59ZI" target="_blank" class="btn">
+                    <button class="ai">🤖 AI Video</button>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Nuuthana Gadhya -->
+
+    <div class="section">
+        <h2 class="section-title">📘 Nuuthana Gadhya</h2>
+
+        <div class="lesson">
+            <h3>📖 Padama 4</h3>
+
+            <div class="button-group">
+
+                <a href="https://youtu.be/G_pGKMs_qvM" target="_blank" class="btn">
+                    <button class="primary">Lesson Part 1</button>
+                </a>
+
+                <a href="https://youtu.be/P1BdLEIy6QI" target="_blank" class="btn">
+                    <button class="primary">Lesson Part 2</button>
+                </a>
+
+                <a href="https://youtu.be/DTWqmaXn8VM" target="_blank" class="btn">
+                    <button class="secondary">🎬 Cinema Video</button>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="lesson">
+            <h3>📖 Padama 13</h3>
+
+            <div class="button-group">
+
+                <a href="https://youtu.be/GhnqI2KN_VQ" target="_blank" class="btn">
+                    <button class="primary">Lesson Video</button>
+                </a>
+
+                <a href="https://youtu.be/6drElKgeZDQ" target="_blank" class="btn">
+                    <button class="ai">🤖 AI Video</button>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="lesson">
+            <h3>📖 Padama 14</h3>
+
+            <div class="button-group">
+
+                <a href="https://youtu.be/o9jynykUiY8" target="_blank" class="btn">
+                    <button class="primary">Lesson Video</button>
+                </a>
+
+                <a href="https://youtu.be/3iIHTmeJz3M" target="_blank" class="btn">
+                    <button class="ai">🤖 AI Video</button>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Naatya -->
+
+    <div class="section">
+        <h2 class="section-title">🎭 Naatya</h2>
+
+        <div class="lesson">
+            <h3>📖 Padama 7</h3>
+
+            <div class="button-group">
+
+                <a href="https://youtu.be/-iqr5QtFwyM" target="_blank" class="btn">
+                    <button class="primary">Lesson Video</button>
+                </a>
+
+                <a href="https://youtu.be/2qdU0KAmKpo" target="_blank" class="btn">
+                    <button class="ai">🤖 AI Video</button>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Vichara -->
+
+    <div class="section">
+        <h2 class="section-title">✍️ Vichara Liyanna Puruduwemu</h2>
+
+        <div style="text-align:center; margin-top:20px;">
+            <a href="https://www.youtube.com/playlist?list=PLHGR0jJiIgy9ar_sQKtNY-P0H4-_8BXMc"
+               target="_blank"
+               class="btn">
+                <button class="special">📚 Vichara Liyapan!</button>
+            </a>
+        </div>
+    </div>
+
+    <div style="text-align:left;margin-bottom:35px;">
+        <a href="../sin.html" target="_self" class="btn">
+            <button class="special">Go Back!</button>
+        </a>
+    </div>
+
+    <footer>
+        Made with ❤️ by Tiru | Modern Edition
+    </footer>
+
+</div>
+
+</body>
+</html>
